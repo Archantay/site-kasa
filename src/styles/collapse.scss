@@ -1,0 +1,36 @@
+.collapse-container {
+    width: 75%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+  
+.collapse-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+background-color: #FF6060;
+color: white;
+}
+
+.collapse-header h2 {
+margin: 0;
+}
+
+.collapse-button {
+background: none;
+color: white;
+border: none;
+font-size: 30px;
+cursor: pointer;
+}
+
+.collapse-button img.open {
+transform: rotate(180deg);
+}
+
+.collapse-content {
+padding: 10px;
+background-color: #fff;
+}
