@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import '../styles/collapse.scss';
+import '../styles/Collapse.scss';
 import arrowSVG from '../images&logo/Vector.svg'
 
-const CollapseComponent = ({ title, content }) => {
+const CollapseComponent = ({ title, children }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleCollapse = () => {
@@ -17,7 +17,7 @@ const CollapseComponent = ({ title, content }) => {
                 <img src={arrowSVG} alt={isOpen ? 'Ouvrir' : 'Fermer'} className={isOpen ? 'open' : ''} />
             </button>
           </div>
-          {isOpen && <div className="collapse-content">{content}</div>}
+          {isOpen && <div className="collapse-content">{children}</div>}
         </div>
       );
     };

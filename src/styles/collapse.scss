@@ -1,7 +1,5 @@
 .collapse-container {
     width: 75%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     margin: 10px 0;
 }
   
@@ -12,6 +10,7 @@ align-items: center;
 padding: 10px;
 background-color: #FF6060;
 color: white;
+border-radius: 10px;
 }
 
 .collapse-header h2 {
@@ -32,5 +31,6 @@ transform: rotate(180deg);
 
 .collapse-content {
 padding: 10px;
-background-color: #fff;
+background-color: #F6F6F6;
 }
+
