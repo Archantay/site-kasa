@@ -31,7 +31,7 @@
 .logement-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     gap: 20px;
     color: #FF6060;
     margin: 1% 4% 0 0;
@@ -46,4 +46,40 @@
 
 .rating {
     font-size: 20px;
+}
+
+@media (max-width: 480px) {
+    .logement-header{
+        flex-direction: column;
+    }
+    .logement-info {
+        flex-direction: row-reverse;
+        width: 96%;
+        gap: 34%;
+        justify-content: flex-end;
+    }
+    .logement-collapse {
+        flex-direction: column;
+    }
+    .collapse-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 376px) {
+    .logement-header{
+        flex-direction: column;
+    }
+    .logement-info {
+        flex-direction: row-reverse;
+        width: 96%;
+        gap: 25%;
+        justify-content: flex-end;
+    }
+    .logement-collapse {
+        flex-direction: column;
+    }  
+    .collapse-container {
+        width: 100%;
+    }
 }

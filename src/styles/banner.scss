@@ -21,3 +21,25 @@
   z-index: -1;
   border-radius: 10px;
 }
+
+.card a {
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 140px;
+  }
+  .banner-text {
+    font-size: 1.2rem;
+    text-align: start;
+    padding: 2rem 180px 2rem 10px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 375px) {
+  .banner-text {
+    padding: 2rem 180px 2rem 10px;
+  }
+}
