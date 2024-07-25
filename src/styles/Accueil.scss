@@ -1,76 +1,76 @@
 .logements {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 60px;
-    margin: 20px 4%;
-    padding: 4% 5%;
-    background-color: #F6F6F6;
-    border-radius: 10px;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 60px;
+  margin: 20px 4%;
+  padding: 4% 5%;
+  background-color: #F6F6F6;
+  border-radius: 10px;
+}
   
-  .card {
-    background: linear-gradient(
-        180deg,
-        rgba(255, 96, 96, 1) 0%,
-        rgba(234, 88, 88, 1) 42%,
-        rgba(203, 68, 68, 1) 90%,
-    ); 
-    
-    color: white;
-    border-radius: 10px;
-    padding: 20px;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: start;
-    box-sizing: border-box;
+.card {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 96, 96, 1) 0%,
+      rgba(234, 88, 88, 1) 42%,
+      rgba(203, 68, 68, 1) 90%,
+  ); 
+  
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  box-sizing: border-box;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.cover-image {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card-title {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: start;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+  right: 10px;
+}
+
+@media (max-width: 480px) {
+  .logements {
+    background-color: white;
+    margin: 0;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logements {
+    grid-template-columns: repeat(auto-fill, minmax(239px, 1fr));
+    gap: 30px;
   }
 
-  .card a {
-    text-decoration: none;
-  }
-
-  .cover-image {
-    width: 100%;
-    height: 85%;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-  
   .card-title {
-    text-decoration: none;
-    color: white;
-    width: 100%;
-    display: flex;
-    align-items: baseline;
-    justify-content: start;
-    padding: 10px;
-    box-sizing: border-box;
-    position: relative;
-    right: 10px;
+    bottom: 12px;
   }
+}
 
-  @media (max-width: 480px) {
-    .logements {
-      background-color: white;
-      margin: 0;
-      gap: 20px;
-    }
+@media (max-width: 768px) {
+  .logements {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
-
-  @media (max-width: 1024px) {
-    .logements {
-      grid-template-columns: repeat(auto-fill, minmax(239px, 1fr));
-      gap: 30px;
-    }
-
-    .card-title {
-      bottom: 12px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .logements {
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    }
-  }
+}
