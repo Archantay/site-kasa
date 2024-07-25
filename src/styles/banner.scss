@@ -22,13 +22,12 @@
   border-radius: 10px;
 }
 
-.card a {
-  text-decoration: none;
-}
+
 
 @media (max-width: 480px) {
   .banner {
-    height: 140px;
+    height: 124px;
+    margin: 0 17px;
   }
   .banner-text {
     font-size: 1.2rem;
