@@ -15,12 +15,12 @@ const Logement = () => {
 
   useEffect(() => {
     if (!logement) {
-      navigate('/erreur'); // Redirige vers la page d'erreur
+      navigate('/erreur');
     }
   }, [logement, navigate]);
 
   if (!logement) {
-    return null; // Return null to render nothing while the redirection is happening
+    return null; 
   }
 
   return (
