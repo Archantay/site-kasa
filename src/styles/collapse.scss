@@ -25,12 +25,26 @@ font-size: 30px;
 cursor: pointer;
 }
 
+.arrow {
+    transition: transform 0.3s ease;
+}
+
 .collapse-button img.open {
-transform: rotate(180deg);
+transform: rotate(-180deg);
 }
 
 .collapse-content {
-padding: 10px;
-background-color: #F6F6F6;
+    max-height: 0;
+    padding: 0 10px;
+    overflow: hidden;
+    background-color: #F6F6F6;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+
+
+    &.open {
+        max-height: 500px;
+        padding: 10px;
+        transform: translateY(0px);
+    }
 }
 

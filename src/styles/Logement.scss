@@ -73,8 +73,12 @@
     .logement-info {
         flex-direction: row-reverse;
         width: 96%;
-        gap: 25%;
+        gap: 20%;
         justify-content: flex-end;
+    }
+
+    .div-info {
+        display: flex;
     }
     .logement-collapse {
         flex-direction: column;

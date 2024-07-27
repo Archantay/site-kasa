@@ -14,10 +14,10 @@ const CollapseComponent = ({ title, children }) => {
           <div className="collapse-header" onClick={toggleCollapse}>
             <h2>{title}</h2>
             <button className={`collapse-button ${isOpen ? 'open' : ''}`}>
-                <img src={arrowSVG} alt={isOpen ? 'Ouvrir' : 'Fermer'} className={isOpen ? 'open' : ''} />
+                <img src={arrowSVG} alt={isOpen ? 'Ouvrir' : 'Fermer'} className={`arrow ${isOpen ? 'open' : ''}`} />
             </button>
           </div>
-          {isOpen && <div className="collapse-content">{children}</div>}
+          <div className={`collapse-content ${isOpen ? 'open' : ''}`}>{children}</div>
         </div>
       );
     };

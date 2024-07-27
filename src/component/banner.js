@@ -8,6 +8,6 @@ const Banner = ({ backgroundImage, text }) => {
       <div className="banner-text">{text}</div>
     </div>
   );
-};
+}; 
 
 export default Banner;
